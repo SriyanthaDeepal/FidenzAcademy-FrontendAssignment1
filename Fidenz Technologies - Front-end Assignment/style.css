@@ -1,0 +1,202 @@
+/* Styles for body */
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header styles */
+header{
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Logo image styles */
+.headImg{
+ 
+    width:320px;
+    height: 70px;
+}
+
+/* Styles for the div */
+#city-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color:white;
+}
+
+/* Styles for city card container */
+.city-card-content{
+    padding: auto;
+    height: fit-content;
+    width: 500px;
+    background-color: #383b47;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the top section of the city card */
+.card-top{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(images/cloud.png);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Styles within the left div of top section */
+.card-top #top-left{
+    text-align: center;
+    padding-left: 30px;
+}
+
+#top-left h2{
+    font-size: 30px;
+}
+
+/* Heading styles within the mid div of top section */
+.card-top #top-mid{
+    text-align: center;
+    padding-top: 24px;
+    padding-left: 30px;
+}
+.card-top #top-mid{
+    justify-content: center;
+}
+
+#top-mid h1{
+    display: inline;
+}
+
+#top-mid #head1{
+    font-size: 40px;
+}
+
+#top-mid #head2{
+    font-size: 20px;
+}
+
+.card-top #top-right{
+    justify-content: center;
+}
+
+/* Styles for the card bottom section */
+.card-bottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* Create vertical lines on the left and right sides of bottom mid div */
+.card-bottom::before,
+.card-bottom::after {
+    content: '';
+    width: 2px;
+    height: 80px;
+    background-color: rgb(107, 105, 105);
+    position: absolute;
+}
+
+/* Position the left line */
+.card-bottom::before {
+    left: calc(44% - 50px); 
+    width: 1.5px;
+}
+
+/* Position the right line */
+.card-bottom::after {
+    right: calc(42% - 50px);
+    width: 1.5px;
+}
+
+/* bottom left division */
+.card-bottom #bottom-left {
+    text-align: left;
+    flex-grow: 0.05;
+}
+
+/* Center-align the middle division */
+.card-bottom #bottom-mid {
+    text-align: center;
+    flex-grow: 0.05;
+}
+
+/* bottom rigth division */
+.card-bottom #bottom-right {
+    text-align: right;
+    flex-grow: 0.05;
+}
+
+/*Styles for close button*/
+.close {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Styles for footer section*/
+footer{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #30333d;
+    text-align: center;
+    color: #8a8a8f;
+  }
+
+  /* Arrow icon styles */
+.arrowHead {
+    display: inline-block;
+    transform: rotate(-45deg);
+    color: white;
+}
+
+/*Styles for weather description*/
+.weatherDesc{
+    text-transform: capitalize;
+}
+
+
+/* Styles for randomly selecting color class in js*/
+.card-color-1 {
+    background-color: #ff5733; /* Red */
+  }
+  
+  .card-color-2 {
+    background-color: #3399ff; /* Blue */
+  }
+  
+  .card-color-3 {
+    background-color: #33ff57; /* Green */
+  }
+  
+  .card-color-4 {
+    background-color: #ff33f4; /* Pink */
+  }
+  
+  .card-color-5 {
+    background-color: #ffd733; /* Yellow */
+  }
+
+  .card-color-6 {
+    background-color:#ffa500; /* Yellow */
+  }
+
+  .card-color-7 {
+    background-color: forestgreen; /* Yellow */
+  }
+
+  .card-color-8 {
+    background-color: rgb(129, 32, 129); /* Yellow */
+  }

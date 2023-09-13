@@ -1,0 +1,271 @@
+/* Styles for body */
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header styles */
+header {
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Logo image styles */
+.headImg {
+    width: 320px;
+    height: 70px;
+}
+
+/* Styles for the div */
+.city-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles for city card container */
+.city-card-content {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    background-color: #383b47;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    color: white;
+}
+
+/* Styles for the top section of the city card */
+.card-top {
+    background-color: #36383f;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/cloud.png);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+/* Heading styles within the top section */
+.card-top h2 {
+    font-size: 30px;
+}
+
+/* Styles for the top div of top section of the city card */
+.card-top #top-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+/* Styles for the left div of top div of top section */
+#top-top-left {
+    margin-right: 10px; 
+}
+
+/* Styles for the right div of top div of top section */
+#top-top-right {
+    margin: 0 auto;
+}
+
+/* Styles for the top bottom of top section of the city card */
+.card-top #top-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styles for the left div of bottom div of top section */
+#top-bottom-left {
+    border-right: 2px solid white; 
+    height: 150px;
+    padding: 0 100px; 
+    align-self: center;
+}
+
+/* Styles for the image of left div of bottom div*/
+#top-bottom-left img {
+    width: 80px; 
+    height: 80px; 
+}
+
+
+/* Styles for the right div of bottom div of top section */
+#top-bottom-right {
+    flex: 0.3; /* Let the right part expand to fill available space */
+    text-align: center; /* Center-align the content in the right part */
+}
+
+/* Heading styles within top-bottom-right */
+#top-bottom-right #head1,
+#top-bottom-right #head2 {
+    display: inline-block;
+}
+
+#top-bottom-right #head2 {
+    font-size: 25px;
+}
+
+
+/* Styles for the card-bottom section */
+.card-bottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* Create vertical lines on the left and right sides of bottom-mid */
+.card-bottom::before,
+.card-bottom::after {
+    content: '';
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+}
+
+/* Position the left line */
+.card-bottom::before {
+    left: calc(40% - 50px); /* Adjust the position as needed */
+}
+
+/* Position the right line */
+.card-bottom::after {
+    right: calc(40% - 50px); /* Adjust the position as needed */
+}
+
+/* bottom left division */
+.card-bottom #bottom-left {
+    text-align: left;
+    flex-grow: 0.05;
+}
+
+/* Center-align the middle division */
+.card-bottom #bottom-mid {
+    text-align: center;
+    flex-grow: 0.05;
+}
+
+/* bottom rigth division */
+.card-bottom #bottom-right {
+    text-align: right;
+    flex-grow: 0.05;
+}
+
+
+/* Arrow icon styles */
+.close {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.close {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add a transition for the color property */
+}
+
+.close:hover {
+    color: rgb(175, 175, 175); /* Change the color when hovered */
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #30333d;
+    text-align: center;
+    color: #8a8a8f;
+}
+
+/* Arrow icon styles */
+.arrowHead {
+    display: inline-block;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 30px;
+}
+
+.weatherDesc{
+    text-transform: capitalize;
+}
+
+
+
+
+/*styles for mobile devices*/
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+
+    /* Logo image styles */
+.headImg {
+    width: 200px;
+    height: 40px;
+}
+
+
+/* Styles for city card container */
+.city-card-content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    background-color: #383b47;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    color: white;
+}
+
+/* Heading styles within the top section */
+.card-top h2 {
+    font-size: 20px;
+}
+
+/* Styles for the left part of top-bottom section */
+#top-bottom-left {
+    border-right: 2px solid white;
+    height: 150px;
+    padding: 0 30px; 
+    align-self: center;
+}
+
+#top-bottom-left img {
+    width: 40px; 
+    height: 40px; 
+}
+
+
+/* Styles for the right part of top-bottom section */
+#top-bottom-right {
+    flex: 0.4; 
+    text-align: center; 
+}
+
+}
